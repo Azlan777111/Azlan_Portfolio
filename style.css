@@ -78,6 +78,21 @@ h2{
 
 }
 
+
+
+html, body{
+    margin: 0;
+}
+#dots-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;      /* sits behind all your existing content */
+    pointer-events: none;
+}
+
 .linkbox {
     width: 400px;
     height: 60px;
@@ -259,4 +274,54 @@ h2{
     font-size: 22px;
     color:#2D2424;
     font-family: "Outfit", sans-serif;
+}
+
+
+.site-footer {
+    text-align: center;
+    padding: 50px 20px 30px;
+}
+
+.footer-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.footer-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 22px;
+    border-radius: 30px;
+    border: 1px solid currentColor;
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: 0.95rem;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.footer-btn:hover{
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.coffee-btn{
+    background: #FFDD00;
+    color: #000;
+    border: none;
+    font-weight: 600;
+}
+
+.coffee-btn:hover {
+    background: #ffd000;
+}
+
+.footer-note {
+    opacity: 0.5;
+    font-size: 0.85rem;
+    margin: 0;
 }
